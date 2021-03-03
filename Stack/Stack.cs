@@ -10,7 +10,7 @@ public class Stack<T>
         Head = null;
         Count = 0;
     }
-    
+
     public Stack(T data)
     {
         Head = new StackItem<T>(data);
@@ -38,7 +38,7 @@ public class Stack<T>
         {
             throw new NullReferenceException("Стек пуст.");
         }
-        
+
     }
 
     public T Top()
@@ -51,6 +51,6 @@ public class Stack<T>
         {
             throw new NullReferenceException("Стек пуст.");
         }
-        
+
     }
 }
