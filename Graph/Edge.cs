@@ -1,0 +1,25 @@
+﻿namespace Section5_Task8
+{
+    /// <summary>
+    /// Ребро графа
+    /// </summary>
+    public class Edge
+    {
+        public Vertex From;
+        public Vertex To { get; set; }
+
+        public int Weight { get; set; }
+
+        public Edge(Vertex from, Vertex to, int weight = 1)
+        {    
+            From = from;
+            To = to;
+            Weight = weight;
+        }
+
+        public override string ToString()
+        {
+            return $"({From}; {To})";
+        }
+    }
+}
